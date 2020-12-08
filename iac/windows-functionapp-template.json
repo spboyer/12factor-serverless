@@ -20,6 +20,9 @@
        },
        "appInsightLocation": {
            "type": "string"
+       },
+       "12factorserverless_STORAGE": {
+          "type": "string"
        }
    },
    "resources": [
@@ -110,6 +113,10 @@
                    {
                        "name": "FUNCTIONS_EXTENSION_VERSION",
                        "value": "~3"
+                   },
+                   {
+                      "name": "12factorserverless_STORAGE",
+                      "value": "[parameters('12factorserverless_STORAGE')]"
                    },
                    {
                        "name": "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING",
